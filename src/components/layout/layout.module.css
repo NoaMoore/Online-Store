@@ -1,0 +1,32 @@
+.layout{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: 4rem 1fr 4rem;
+    grid-template-areas: 
+      "header header"
+      "sidebar main"
+      "footer footer";
+    border: 1px solid red;
+}
+
+.header{
+    grid-area: header;
+    border: 1px solid green;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    border: 1px solid orange
+}
+
+.main{
+    grid-area: main;
+    border: 1px solid blue
+}
+
+.footer{
+    grid-area: footer;
+    border: 1px solid purple;
+}
